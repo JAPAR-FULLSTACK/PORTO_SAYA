@@ -1,0 +1,26 @@
+[
+  {
+    "id": "test-1",
+    "quote": "Raffa tura turu tok.",
+    "authorName": "LUTFHI",
+    "authorRole": "Guru Produktif Rekayasa Perangkat Lunak (RPL)",
+    "authorCompany": "SMK 1 Antartika Sidoarjo",
+    "relation": "Mentor & Guru pembina "
+  },
+  {
+    "id": "test-2",
+    "quote": "-.",
+    "authorName": "-",
+    "authorRole": "-",
+    "authorCompany": "-",
+    "relation": "-"
+  },
+  {
+    "id": "test-3",
+    "quote": "-",
+    "authorName": "-",
+    "authorRole": "-",
+    "authorCompany": "-",
+    "relation": "-"
+  }
+]

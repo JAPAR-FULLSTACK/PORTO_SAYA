@@ -1,0 +1,34 @@
+[
+  {
+    "id": "cert-1",
+    "title": "Menjadi Front-End di  maspion it",
+    "issuer": "MASPION IT",
+    "issueDate": "206",
+    "badge": "PROFESIONAL CODE",
+    "credentialUrl": "https://maspionsquare.co.id/"
+  },
+  {
+    "id": "cert-2",
+    "title": "GOOGLE DEVELOPER COMUNITY",
+    "issuer": "GOOGLE",
+    "issueDate": "2024",
+    "badge": "SERTIFIKAT GDG ",
+    "credentialUrl": "https://gdg.community.dev/"
+  },
+  {
+    "id": "cert-3",
+    "title": "-",
+    "issuer": "-",
+    "issueDate": "-",
+    "badge": "-",
+    "credentialUrl": "-"
+  },
+  {
+    "id": "cert-4",
+    "title": "Siswa Berprestasi Jurusan Rekayasa Perangkat Lunak",
+    "issuer": "SMK 1 Antartika Sidoarjo",
+    "issueDate": "2025",
+    "badge": "STUDENT",
+    "credentialUrl": "#"
+  }
+]

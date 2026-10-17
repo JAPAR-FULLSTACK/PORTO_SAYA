@@ -1,0 +1,69 @@
+[
+  {
+    "id": "exp-1",
+    "role": "FrontenD eginner",
+    "company": "Independent Client Engagements",
+    "period": "2026 — now",
+    "location": "buduran, Sidoarjo , jawa timur",
+    "type": "Kontrak & Freelance",
+    "description": "Merancang dan membangun website,aplikasi dan sebuah tools.",
+    "highlights": [
+      "Meningkatkan skor kepercayaan dari rata-rata dibawah 50  → 98 pada 5 project klien.",
+      "Mengurangi ukuran JavaScript bundle sebesar 45% melalui code splitting, dynamic imports, dan CSS-first transitions.",
+      "Membangun reusable design tokens yang mempercepat siklus pengiriman antarmuka hingga 2x lebih efisien.",
+      "Mengimplementasikan WCAG 2.1 AA accessibility standards pada semua komponen interaktif."
+    ],
+    "tech": [
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Next.js",
+      "vue js",
+      "Vercel"
+     
+
+    ]
+  },
+  {
+    "id": "exp-2",
+    "role": "backend developer",
+    "company": "SMK 1 Antartika Sidoarjo (Jurusan RPL)",
+    "period": "2026 ",
+    "location": "Sidoarjo, Jawa Timur",
+    "type": "Programing",
+    "description": "Memmbuat sebuah website dari landing page hingga ui dan us yang menarik .",
+    "highlights": [
+      "Membuild project voca safe",
+      "menetapkan standart auth dan kemanan data  dengan terenskripsi.",
+      "Menghubungkan antarmuka React dengan REST API backend dengan latensi sub-50ms.",
+      "mengerjakan banya project sekaligus banyak"
+    ],
+    "tech": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "node.js",
+      "Git Workflow",
+      "REST APIs"
+    ]
+  },
+  {
+    "id": "exp-3",
+    "role": "-",
+    "company": "-",
+    "period": "-",
+    "location": "-",
+    "type": "-",
+    "description": "-.",
+    "highlights": [
+      "-."
+     
+    ],
+    "tech": [
+      "-"
+
+      
+      
+    ]
+  }
+]

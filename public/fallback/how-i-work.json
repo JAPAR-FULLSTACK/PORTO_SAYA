@@ -1,0 +1,46 @@
+[
+  {
+    "step": "01",
+    "title": "membuat PRD ",
+    "tagline": "  PRD",
+    "description": "MEMBUAT PRD  TERELBIH DAHULU SEBELUM KE  MEMEBUAT PROJECT NYA ",
+    "deliverables": [
+      "Dokumen PRD Terstruktur",
+      "Daftar User Journey",
+      "Skema Data Entitas"
+    ]
+  },
+  {
+    "step": "02",
+    "title": "DESIGN",
+    "tagline": "DESIGN",
+    "description": "MEMBUAT DESIGN TERLEBIH DAHULU DAN MEREFRENSIKAN DESIGN NYA SEBELUM MENGESEKUSI LANGSUNG.",
+    "deliverables": [
+      "DESIGN LEBIH BAGUS",
+      "UI LEBIH RESPONSIVE",
+      "USER FRINDLY"
+    ]
+  },
+  {
+    "step": "03",
+    "title": "EKSEKUSI PLANING",
+    "tagline": "CODING",
+    "description": "MEMBUAT STRUKTUR SEBUAH PROJECT DAN MEMBIKIN SEBUAH PROJECT SETELAH PLANING",
+    "deliverables": [
+      "EFISIEN PENGERJAAN ",
+      "OUTPUT YANG LEBIH BAGUS",
+      "PROSES AKHIR YANG OPTIMAL"
+    ]
+  },
+  {
+    "step": "04",
+    "title": "Audit, Measure & Deliver",
+    "tagline": "PENGUJIAN /AUDIT ",
+    "description": "Pengujian multi-viewport (1440px / 768px / 375px), validasi Lighthouse 98+ CI, pengujian keyboard accessibility, dan deployment zero-downtime.",
+    "deliverables": [
+      "Lighthouse Report 98+",
+      "Audit WCAG 2.1 AA",
+      "Dokumentasi Lengkap"
+    ]
+  }
+]

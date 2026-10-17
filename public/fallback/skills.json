@@ -1,0 +1,50 @@
+[
+  {
+    "name": "React 19 & Next.js",
+    "category": "Frontend",
+    "proficiency": 94,
+    "proof": "Digunakan di Aethelgard & Portal Akademik"
+  },
+  {
+    "name": "TypeScript Strict",
+    "category": "Frontend",
+    "proficiency": 92,
+    "proof": "Zero any policy di seluruh basis kode"
+  },
+  {
+    "name": "Tailwind CSS v4",
+    "category": "Frontend",
+    "proficiency": 96,
+    "proof": "Sistem token desain & utility kustom"
+  },
+  {
+    "name": "Web Vitals & Performance",
+    "category": "Quality & Performance",
+    "proficiency": 95,
+    "proof": "Skor Lighthouse 98+ pada 5 proyek klien"
+  },
+  {
+    "name": "Motion & Micro-interactions",
+    "category": "Motion & UI",
+    "proficiency": 88,
+    "proof": "Animasi sinematik 60fps teroptimasi"
+  },
+  {
+    "name": "HTML5 & WCAG 2.1 AA",
+    "category": "Quality & Performance",
+    "proficiency": 90,
+    "proof": "Audit aksesibilitas 100/100"
+  },
+  {
+    "name": "Headless Architecture",
+    "category": "Architecture & Tooling",
+    "proficiency": 87,
+    "proof": "Decoupled Sanity / RESTful schemas"
+  },
+  {
+    "name": "Git Workflow & CI/CD",
+    "category": "Architecture & Tooling",
+    "proficiency": 89,
+    "proof": "Automated linting & deployment pipeline"
+  }
+]

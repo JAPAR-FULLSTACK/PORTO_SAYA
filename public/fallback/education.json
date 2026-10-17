@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "institution": "SMK 1 Antartika Sidoarjo",
+      "major": "Rekayasa Perangkat Lunak (RPL)",
+      "period": { "start": "2023", "end": "2026" },
+      "isCurrent": true,
+      "description": "Fokus pada rekayasa perangkat lunak dengan pendekatan proyek nyata. Sebagian besar pembelajaran dilakukan melalui pengerjaan tools dan aplikasi web, bukan hanya teori di kelas.",
+      "topics": [
+        "Pemrograman Web",
+        "Basis Data",
+        "Rekayasa Perangkat Lunak",
+        "Algoritma & Struktur Data",
+        "Jaringan Dasar"
+      ],
+      "location": "Sidoarjo, Jawa Timur",
+      "order": 1
+    },
+    {
+      "institution": "SMP Negeri 2 Buduran",
+      "period": { "start": "2020", "end": "2023" },
+      "isCurrent": false,
+      "description": "Masa di mana saya mulai tertarik pada komputer dan pemrograman — awalnya dari rasa penasaran, lalu tumbuh jadi minat yang serius.",
+      "location": "Buduran, Sidoarjo, Jawa Timur",
+      "order": 2
+    },
+    {
+      "institution": "SD Negeri Sidokare 1",
+      "period": { "start": "2014", "end": "2020" },
+      "isCurrent": false,
+      "description": "Awal ketertarikan pada teknologi, dimulai dari seringnya bermain dengan komputer keluarga.",
+      "location": "Sidoarjo, Jawa Timur",
+      "order": 3
+    }
+  ]
+}

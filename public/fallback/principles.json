@@ -1,0 +1,32 @@
+[
+  {
+    "number": "01",
+    "title": "Optimization Obsessed",
+    "description": "Setiap byte, aset gambar, dan millisecond diukur sebelum dan sesudah ship. Tidak ada optimasi prematur tanpa profil data nyata.",
+    "metric": "LCP < 1.0s di 4G"
+  },
+  {
+    "number": "02",
+    "title": "Performance as a Feature",
+    "description": "Kecepatan bukanlah polesan akhir. Zero layout shift, bundle terpecah secara granular, dan hydration mulus sejak detik pertama.",
+    "metric": "Bundle < 80KB Main"
+  },
+  {
+    "number": "03",
+    "title": "Iterate & Improve",
+    "description": "Setiap proyek adalah benchmark untuk evolusi berikutnya. Selalu audit kode, refactor terarah, dan dokumentasikan pelajaran teknis.",
+    "metric": "Weekly Code Audit"
+  },
+  {
+    "number": "04",
+    "title": "DESIGN ELEGAN ",
+    "description": "Menolak gradien ungu-biru murahan, glassmorphism berlebihan, dan ilustrasi generik. Mengutamakan tipografi tajam, kontras tinggi, dan whitespace bermakna. DAN tanpa design yang  terlihat ai ",
+    "metric": "Editorial Aesthetics"
+  },
+  {
+    "number": "05",
+    "title": "Proof Over Promise",
+    "description": "Setiap klaim keahlian dibuktikan melalui metrik terukur, live sandbox, dan arsitektur repositori yang dapat diverifikasi publik.",
+    "metric": "Lighthouse 98+ CI"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "proj-1",
+    "title": "sek bingung project eh opo",
+    "slug": "-",
+    "tag": "-",
+    "year": "-",
+    "summary": "-",
+    "descriptionShort": "-",
+    "problem": "",
+    "solution": ".",
+    "outcome": "",
+    "metrics": [
+      "-"
+    
+    ],
+    "techStack": [
+      "-"
+      
+    ],
+    "demoUrl": "-",
+    "githubUrl": "-",
+    "featured": true
+  },
+  {
+    "id": "proj-2",
+    "title": "sek nganggu dino iki ",
+    "slug": "-",
+    "tag": "-",
+    "year": "-",
+    "summary": "-.",
+    "descriptionShort": "-",
+    "problem": "-",
+    "solution": "-",
+    "outcome": "-",
+    "metrics": [
+      "-"
+      
+    ],
+    "techStack": [
+      "-"
+    
+    ],
+    "demoUrl": "-",
+    "githubUrl": "-",
+    "featured": true
+  },
+  {
+    "id": "proj-3",
+    "title": "-",
+    "slug": "-",
+    "tag": "-",
+    "year": "-",
+    "summary": "-",
+    "descriptionShort": "-",
+    "problem": "-",
+    "solution": "-",
+    "outcome": "-",
+    "metrics": [
+      "-"
+      
+    ],
+    "techStack": [
+      "-"
+     
+    ],
+    "demoUrl": "-",
+    "githubUrl": "-",
+    "featured": true
+  },
+  {
+    "id": "proj-4",
+    "title": "-",
+    "slug": "-",
+    "tag": "-",
+    "year": "-",
+    "summary": "-",
+    "descriptionShort": "-",
+    "problem": "-.",
+    "solution": "-.",
+    "outcome": "-",
+    "metrics": [
+      "-"
+      
+    ],
+    "techStack": [
+      "-"
+    
+    ],
+    "demoUrl": "-",
+    "githubUrl": "-",
+    "featured": false
+  }
+]
