@@ -1,7 +1,6 @@
-import React, { useState, useRef } from 'react';
-import { Camera, Upload, Trash2, Check, Sparkles, MapPin, GraduationCap, Heart, Terminal, Coffee, Layers, Compass, ArrowUpRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPin, GraduationCap, Coffee, ArrowUpRight } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
-import { useProfilePhoto } from '../utils/photoStorage';
 
 interface AboutSectionProps {
   onOpenCV: () => void;
@@ -10,40 +9,7 @@ interface AboutSectionProps {
 
 export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onShowToast }) => {
   const { profile } = PORTFOLIO_DATA;
-  const { photo, savePhoto, resetPhoto, isCustom } = useProfilePhoto();
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
   const [activeTab, setActiveTab] = useState<'journey' | 'philosophy' | 'setup' | 'personal'>('journey');
-
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    if (!file.type.startsWith('image/')) {
-      onShowToast('Mohon pilih file gambar (JPG, PNG, WebP)', 'error');
-      return;
-    }
-
-    if (file.size > 5 * 1024 * 1024) {
-      onShowToast('Ukuran gambar maksimal 5MB', 'error');
-      return;
-    }
-
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const result = event.target?.result as string;
-      if (result) {
-        savePhoto(result);
-        onShowToast('Foto profil Anda berhasil dipasang & tersimpan!', 'success');
-      }
-    };
-    reader.readAsDataURL(file);
-  };
-
-  const handleRemovePhoto = () => {
-    resetPhoto();
-    onShowToast('Foto profil dikembalikan ke avatar default', 'info');
-  };
 
   return (
     <section id="about" className="py-20 md:py-28 bg-[#0E0E10] border-t border-[#232326] relative">
@@ -73,10 +39,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onShowToas
             {/* Photo Card with Fine Editorial Frame */}
             <div className="p-3 rounded-2xl bg-[#121214] border border-[#232326] relative group">
               <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#18181B] border border-[#27272a] flex items-center justify-center">
+                
+                {/* FOTO DIKUNCI DI SINI (Tidak ada upload dari website) */}
                 <img
-                  src={photo}
+                  src="data:image/jpeg;base64,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" 
+                  // ^^^ Jika mau ganti dengan fotomu, ganti link di atas dengan "/nama-foto.jpg" (taruh di folder public)
                   alt={profile.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
                 />
 
                 {/* Subtle Location & Status Tag */}
@@ -85,42 +54,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onShowToas
                   <span> buduran, Sidoarjo, Jawa Timur</span>
                 </div>
 
-                {/* Photo Change Indicator */}
-                <div className="absolute bottom-3 right-3 flex items-center gap-2">
-                  <button
-                    onClick={() => fileInputRef.current?.click()}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0A0A0B]/90 backdrop-blur-md border border-[#3F3F46] hover:border-[#D9FF3D] text-xs font-mono text-[#F4F4F5] hover:text-[#D9FF3D] transition-all cursor-pointer shadow-lg"
-                    title="Unggah foto asli Anda"
-                  >
-                    <Camera className="w-3.5 h-3.5" />
-                    <span>{isCustom ? 'Ganti Foto' : 'Pasang Foto Saya'}</span>
-                  </button>
-
-                  {isCustom && (
-                    <button
-                      onClick={handleRemovePhoto}
-                      className="p-1.5 rounded-lg bg-[#0A0A0B]/90 backdrop-blur-md border border-[#3F3F46] hover:border-[#EF4444] text-[#71717A] hover:text-[#EF4444] transition-all cursor-pointer shadow-lg"
-                      title="Reset ke avatar default"
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
-                  )}
-                </div>
-
-                {/* Hidden File Input */}
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileUpload}
-                  className="hidden"
-                />
-              </div>
-
-              {/* Photo helper info */}
-              <div className="pt-3 px-1 flex items-center justify-between text-[11px] font-mono text-[#71717A]">
-                <span>Format: 4:5 Portrait High-Res</span>
-                <span className="text-[#A1A1AA]">{isCustom ? 'Foto Kustom Aktif' : 'Default Avatar'}</span>
               </div>
             </div>
 
@@ -140,7 +73,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onShowToas
               </div>
               <div className="flex items-center justify-between pb-2 border-b border-[#232326]">
                 <span className="text-[#71717A]">FOKUS SAYA </span>
-                <span className="text-[#F4F4F5]">FULLSTACK  &amp; CYBERSECURITY </span>
+                <span className="text-[#F4F4F5]">FULLSTACK  </span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-[#71717A]">STATUS</span>
@@ -156,7 +89,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCV, onShowToas
           {/* Right Column: Narrative & Story Tabs (7 Cols) */}
           <div className="lg:col-span-7 space-y-6">
             
-            {/* Friendly Tab Selector (Not Pill Slop, Clean Segmented Controls) */}
+            {/* Friendly Tab Selector */}
             <div className="flex items-center gap-1.5 p-1 bg-[#121214] border border-[#232326] rounded-xl overflow-x-auto text-xs font-mono">
               <button
                 onClick={() => setActiveTab('journey')}
@@ -285,7 +218,7 @@ kenapa. Tapi saya tidak mau berhenti di sana.
                   </div>
                   <div className="p-3 rounded-xl bg-[#0A0A0B] border border-[#232326] text-[#E4E4E7] flex items-start gap-2.5">
                     <span className="text-[#D9FF3D] font-bold">03.</span>
-                    <span>a Garis yang Tidak Saya Lewati
+                    <span> Garis yang Tidak Saya Lewati
     Aksesibilitas, semantik, kontras. Tidak
     diminta. Tetap dikerjakan.</span>
     
@@ -305,7 +238,7 @@ kenapa. Tapi saya tidak mau berhenti di sana.
                   </div>
                   <div className="p-3 rounded-xl bg-[#0A0A0B] border border-[#232326] text-[#E4E4E7] flex items-start gap-2.5">
                     <span className="text-[#D9FF3D] font-bold">06.</span>
-                    <span>aBelajar dari yang Sudah Lewat
+                    <span>Belajar dari yang Sudah Lewat
     Proyek yang gagal mengajarkan hal yang
     tidak bisa diajarkan proyek yang berhasiln.</span>
     
@@ -373,7 +306,7 @@ karena diminta. Tapi karena saya sendiri butuh.
                 </p>
 
                 <p>
-                  FDari semua itu, saya belajar bahwa tools yang bagus tidak selalu yang canggih. Kadang yang paling berguna justru yang paling sederhana — asal tepat menyelesaikan masalahnya. Dan tidak semua yang saya bangun harus jadi sesuatu. kadang nilainya justru di prosesnya, yang memaksa saya memahami masalah lebih dalam sebelum mulai menulis kode
+                  Dari semua itu, saya belajar bahwa tools yang bagus tidak selalu yang canggih. Kadang yang paling berguna justru yang paling sederhana — asal tepat menyelesaikan masalahnya. Dan tidak semua yang saya bangun harus jadi sesuatu. kadang nilainya justru di prosesnya, yang memaksa saya memahami masalah lebih dalam sebelum mulai menulis kode
                 </p>
 
                 <div className="p-4 rounded-xl bg-[#0A0A0B] border border-[#232326] flex items-center justify-between">

@@ -126,7 +126,7 @@ export const PORTFOLIO_DATA: {
     role: "Software Engineering Student & Frontend UI Engineer",
     institution: "SMK 1 Antartika Sidoarjo (Rekayasa Perangkat Lunak)",
     location: "Sidoarjo, Jawa Timur, Indonesia ",
-    tagline: "Membangun Sbuah website Dan aplikasi yang lebih user friendly",
+    tagline: "Membangun Sebuah website Dan aplikasi yang lebih user friendly",
     bio: "Saya Muhammad Raffadian Pratama, siswa SMK 1 Antartika Sidoarjo jurusan Rekayasa Perangkat Lunak (RPL) dengan fokus pada rekayasa antarmuka web modern, performance engineering, dan sistem desain editorial. ",
     availability: true,
     availabilityNote: "Available for Projects & Internship — Response within 24h",
@@ -432,11 +432,11 @@ export const PORTFOLIO_DATA: {
   certifications: [
     {
       id: "cert-1",
-      title: "-",
-      issuer: "-",
-      issueDate: "-",
-      badge: "-",
-      credentialUrl: "-"
+      title: "Siswa Berprestasi Jurusan Rekayasa Perangkat Lunak",
+      issuer: "SMK 1 Antartika Sidoarjo",
+      issueDate: "2026",
+      badge: "Profesional academic honor",
+      credentialUrl: "#"
     },
     {
       id: "cert-2",
@@ -456,11 +456,11 @@ export const PORTFOLIO_DATA: {
     },
     {
       id: "cert-4",
-      title: "Siswa Berprestasi Jurusan Rekayasa Perangkat Lunak",
-      issuer: "SMK 1 Antartika Sidoarjo",
-      issueDate: "2025",
-      badge: "Profesional academic honor",
-      credentialUrl: "#"
+      title: "-",
+      issuer: "-",
+      issueDate: "-",
+      badge: "-",
+      credentialUrl: "-"
     }
   ],
 
